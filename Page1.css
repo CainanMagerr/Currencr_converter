@@ -1,0 +1,608 @@
+.body {
+    width: 100%;
+    height: 150%;
+    display: flex;
+    justify-content: center;
+}
+
+.last_currency {
+    position: absolute;
+    width: 100%;
+}
+
+.li {
+    position: absolute;
+    list-style-type: none;
+    gap: 3%;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    margin-top: 30px;
+    font-family: Quattrocento Sans;
+    z-index: 1;
+}
+
+.logo_currency {
+    width: 300px;
+    height: 220px;
+    position: absolute;
+    opacity: 50%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    margin-left: -100px;
+}
+
+.logo_currency:hover {
+    opacity: 100%;
+}
+
+li {
+    color: white;
+}
+
+
+.li1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+.li2 {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.5s;
+    width: 200px;
+    text-align: center;
+    font-size: 1.39vw;
+}
+
+.li2:hover {
+    text-shadow: 0px 0px 10px white;
+    color: white;
+    text-decoration: none;
+}
+
+.li3 {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.5s;
+    width: 120px;
+    font-size: 1.39vw;
+}
+
+.li3:hover {
+    text-shadow: 0px 0px 10px white;
+    text-decoration: none;
+    color: white;
+}
+
+.register_menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 30%;
+}
+
+.register {
+    height: 40px;
+    width: 140%;
+    font-family: Quattrocento Sans;
+    font-size: 1.39vw;
+    cursor: pointer;
+    border-color: transparent;
+    background-color: #000;
+    color: #fff;
+    opacity: .5;
+    border-radius: 15px;
+}
+
+.register:hover {
+    opacity: .7;
+}
+
+
+.signUp {
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    margin-top: 80px;
+    background: transparent;
+    border: 2px solid grey;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px black;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: transform .5s ease, height .3s ease-in-out;
+
+}
+
+.form-box.login {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    transition: transform .3s ease;
+}
+
+.signUp .form-box.register1 {
+    transform: translateX(-400px);
+    opacity: 0px;
+
+}
+
+.change-form {
+    height: 500px;
+}
+.forgot-form {
+    height: 400px;
+}
+.forgot-link {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+/* .forgot-form .form-box.forgot {
+    transform: translateZ(400px);
+ opacity: 0px;
+}
+
+.forgot-form .form-box.login {
+    transform: translateX(400px);
+    opacity: 0px;
+} */
+
+
+.change-form .form-box.login {
+    transform: translateX(400px);
+    opacity: 0;
+}
+
+.change-form .form-box.register1 {
+    transform: translateX(0px);
+    opacity: 1px;
+}
+
+.active-log {
+    transform: scale(1);
+}
+
+
+
+.close123 {
+    position: absolute;
+    width: 20px;
+    margin-top: -210px;
+    margin-left: 280px;
+    cursor: pointer;
+    
+}
+.forgot-text {
+    width: 130%;
+}
+.form-box h2 {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    font-family: Quattrocento Sans;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translate(-50%);
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+    font-family: Quattrocento Sans;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+    font-family: Quattrocento Sans;
+}
+
+.remember-me {
+    font-size: .9em;
+    color: black;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Quattrocento Sans;
+}
+
+.remember_-e label input {
+    accent-color: black;
+    margin-right: 3px;
+}
+
+.remember-me a {
+    color: black;
+    text-decoration: none;
+}
+
+.remember-me a:hover {
+    text-decoration: underline;
+}
+
+.btn123 {
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    font-family: Quattrocento Sans;
+}
+
+.login-register {
+    font-size: .9em;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+    font-family: Quattrocento Sans;
+
+}
+
+.login-register p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+
+
+.main1 {
+    position: absolute;
+    margin-top: 36%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.input1 {
+    height: 60%;
+    font-size: 130%;
+    width: 70%;
+    padding-left: 5px;
+    font-family: Quattrocento Sans;
+    border-color: transparent;
+    background-color: #000;
+    color: #fff;
+    opacity: .5;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.label1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.select1 {
+    height: 60%;
+    font-size: 160%;
+    width: 130px;
+    font-family: Quattrocento Sans;
+    border-color: transparent;
+    background-color: #000;
+    color: #fff;
+    opacity: .5;
+    border-radius: 15px;
+    padding-left: 15%;
+    margin-top: 5px;
+}
+
+.select2 {
+    height: 60%;
+    font-size: 160%;
+    width: 130px;
+    font-family: Quattrocento Sans;
+    border-color: transparent;
+    background-color: #000;
+    color: #fff;
+    opacity: .5;
+    border-radius: 15px;
+    padding-left: 15%;
+    margin-top: 5px;
+}
+
+h1 {
+    font-family: Quattrocento Sans;
+    font-size: 240%;
+
+    color: black;
+    opacity: 50%;
+    margin-left: 3%;
+
+}
+
+.convert {
+    height: 115%;
+    width: 20%;
+    font-family: Quattrocento Sans;
+    font-size: 190%;
+    cursor: pointer;
+    border-color: transparent;
+    background-color: #000;
+    color: #fff;
+    opacity: .5;
+    border-radius: 25px;
+    margin-top: -2px;
+}
+
+.convert:hover {
+    opacity: .7;
+}
+
+.result {
+    border-color: transparent;
+    background-color: #000;
+    color: #fff;
+    opacity: .5;
+    border-radius: 15px;
+    height: 15%;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 400px;
+    width: 25vw;
+    font-family: Quattrocento Sans;
+    font-size: 190%;
+    padding: 10px;
+}
+
+.result:hover {
+    opacity: .8;
+}
+
+.news {
+    margin-top: 58%;
+}
+
+.news_style {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    gap: 30px;
+}
+
+.news_style1 {
+    width: 93%;
+    height: 80%;
+    background-color: navy;
+    border: 1px soild black;
+    font-size: 40px;
+    color: #000;
+}
+
+.news_style2 {
+    width: 93%;
+    height: 80%;
+    background-color: navy;
+    border: 1px soild black;
+    font-size: 40px;
+    color: #000;
+}
+
+.news_style3 {
+    width: 93%;
+    height: 80%;
+    background-color: navy;
+    border: 1px soild black;
+    font-size: 40px;
+    color: #000;
+}
+
+.cover {
+    position: relative;
+    padding: 0px 30px;
+    margin-top: 160%;
+    display: flex;
+    justify-content: center;
+    margin-top: 55%;
+    z-index: 1;
+    width: 100%;
+    height: 120%;
+}
+
+
+
+.scroll-images {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    padding: 40px 0px;
+
+    display: flex;
+
+
+
+}
+
+.child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 15%;
+    height: 15%;
+    padding: 3%;
+    margin: 1px 10px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);
+    text-align: center;
+}
+
+p {
+    font-size: 80%;
+}
+
+
+
+
+
+.phone {
+    position: absolute;
+    margin-top: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.abstract {
+    position: absolute;
+    width: 400px;
+
+}
+
+.abstract1 {
+    width: 100%;
+}
+
+.head_phone {
+
+    font-family: Quattrocento Sans;
+    font-size: 190%;
+    color: navy;
+    font-weight: bolder;
+    opacity: 100%;
+
+}
+
+.phone_text {
+
+    font-family: Quattrocento Sans;
+    font-size: 100%;
+    color: black;
+
+}
+
+.phone_column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 600px;
+}
+
+.store1 {
+    width: 240px;
+    cursor: pointer;
+}
+
+.store2 {
+    width: 266px;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 50vw;
+    background-color: navy;
+    margin-top: 170%;
+    align-items: center;
+}
+
+.footer_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    font-size: 1.2vw;
+    list-style: none
+}
+
+.currency_image1 {
+    width: 15vw;
+    padding: 20px;
+}
+
+.footer_text {
+    font-family: Quattrocento Sans;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor:
+    ;
+}
+
+.company {
+    color: white;
+    margin-left: 1.3vw;
+    cursor: pointer;
+}
+
+.footer_li {
+    font-family: Quattrocento Sans;
+    color: white;
+    font-size: 1.2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    cursor: pointer;
+}
+
+.h4 {
+    cursor: pointer;
+}
+
+.li_1 {
+    cursor: pointer;
+}
